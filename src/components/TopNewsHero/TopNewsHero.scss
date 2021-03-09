@@ -1,0 +1,119 @@
+.hero-container-azq {
+  .hero-slide {
+    position: relative;
+  }
+
+  .hero-slide .uk-slideshow-items {
+    position: relative;
+  }
+
+  .hero {
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+  .hero-slide .uk-slideshow-items img {
+    -webkit-filter: brightness(80%) !important;
+    filter: brightness(80%) !important;
+  }
+
+  .hero-slide .uk-slideshow-items:after {
+    position: absolute;
+    content: "";
+
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(10%, rgba(0, 0, 0, 0.8)),
+      color-stop(90%, black)
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)
+    );
+  }
+
+  .hero-slide .movie-features {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+  }
+
+  .hero-slide .movie-features .title {
+    color: #fff;
+    // font-weight: 300;
+    font-family: "Raleway", sans-serif;
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  .hero-slide .movie-features dd {
+    color: #fff;
+    line-height: 20px;
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 50%;
+  }
+
+  .hero-slide .movie-features .category {
+    color: #fff;
+    line-height: 20px;
+    font-size: 20px;
+    padding: 10px 0px;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 840px) {
+    .movie-features {
+      top: 25% !important;
+      left: 1%;
+    }
+    .movie-features .title {
+      font-size: 30px !important;
+      line-height: 30px;
+    }
+    .movie-features dd {
+      line-height: 16px;
+      padding: 5px 7px;
+      width: 100% !important;
+    }
+    .movie-features .stars * {
+      color: #daa520;
+      font-size: 40px;
+      line-height: 60px;
+      text-shadow: 0 5px 10px rgba(218, 165, 32, 0.4);
+    }
+    .movie-features .category {
+      color: #fff;
+      line-height: 20px;
+      padding: 5px 0px;
+      font-size: 18px;
+    }
+    .hero {
+      height: 50vh !important;
+      margin-bottom: 60px;
+    }
+    .hero-slide .movie-features dd {
+      color: #fff;
+    }
+
+    .hero-slide .uk-slideshow-items img {
+      height: 500px;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 640px) {
+    .hero {
+      height: 50vh !important;
+      margin-bottom: 25rem;
+    }
+  }
+  @media screen and (min-width: 700px) and (max-width: 768px) {
+    .hero {
+      height: 50vh !important;
+      margin-bottom: 33rem;
+    }
+  }
+}

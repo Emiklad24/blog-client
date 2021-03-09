@@ -1,0 +1,144 @@
+.post-content-body-suspense {
+  //   //   width: 360px;
+  //   height: 640px;
+  //   background-color: #f5f5f5;
+  //   margin: auto;
+  //   margin-top: 5%;
+  //   overflow: scroll;
+  //   -webkit-box-shadow: 0px 1px 32px 4px rgba(0, 0, 0, 0.16);
+  //   -moz-box-shadow: 0px 1px 32px 4px rgba(0, 0, 0, 0.16);
+  //   box-shadow: 0px 1px 32px 4px rgba(0, 0, 0, 0.16);
+  //   overflow-y: scroll;
+  //   overflow-x: hidden;
+
+  .post-content-body-suspense::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .post-content-body-suspense::-webkit-scrollbar-thumb {
+    background-color: #e4e4e4;
+  }
+
+  .post-content-body-suspense::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+  }
+
+  .post-content-body-suspense::-webkit-scrollbar-corner {
+    background-color: #f5f5f5;
+    display: none;
+  }
+
+  .card1 {
+    //   width: 328px;
+    height: 500px;
+    margin: 16px auto;
+    background-color: #ffffff;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  .element1 {
+    //   top: 16px;
+    //   left: 50px;
+    height: 400px;
+    width: 500px;
+  }
+  .element2 {
+    //   top: 36px;
+    //   left: 80px;
+    height: 98px;
+    width: 160px;
+  }
+
+  .element3 {
+    top: 58px;
+    left: 16px;
+    height: 14px;
+    width: 500px;
+  }
+
+  .element4 {
+    top: 68px;
+    left: 16px;
+    height: 14px;
+    width: 500px;
+  }
+
+  .gradient {
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #fafafa 8%, #f4f4f4 38%, #fafafa 54%);
+    background-size: 1000px 840px;
+
+    position: relative;
+  }
+
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    100% {
+      background-position: 468px 0;
+    }
+  }
+}
+
+/*
+   .gradient {
+     width: 340px;
+     height: 218px;
+     background: linear-gradient(271deg, #000000, #00eaad);
+     background-size: 400% 400%;
+   -webkit-animation: AnimationName 4s ease infinite;
+   -moz-animation: AnimationName 4s ease infinite;
+   animation: AnimationName 4s ease infinite;
+     margin: auto;
+     margin-top: 32px;
+     border-radius: 2px;
+   
+   }
+   
+   @keyframes AnimationName { 
+       0%{background-position:0% 50%}
+       50%{background-position:100% 51%}
+       100%{background-position:0% 50%}
+   }
+   
+   
+   */
+
+/* 
+   .gradient {
+     height: 300px;
+     width: 400px;
+     background: linear-gradient(to right, rgba(242,242,242,1), rgba(233,233,233,1), rgba(242,242,242,1));
+     animation: slide 3s ease;
+     animation-iteration-count: infinite;
+     transform: translateX(-200px);
+   }
+   
+   
+   @keyframes slide {
+     0% { 
+           transform: translateX(-100px); 
+           opacity: 1;
+         }
+     60% { 
+           transform: translateX(400px);
+           opacity: 1;
+         }
+     100% { transform: translateX(900px);
+           opacity: 0;
+         }
+   }
+   */
